@@ -10,13 +10,20 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HeaderComponent } from './header/header.component';
+import { LogingComponent } from './loging/loging.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProfileComponent,
-    AboutusComponent
+    AboutusComponent,
+    HeaderComponent,
+    LogingComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +32,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    MatButtonModule
+    MatButtonModule,
+    MatToolbarModule
 
   ],
   providers: [],
