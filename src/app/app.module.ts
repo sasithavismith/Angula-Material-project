@@ -18,6 +18,7 @@ import { HeaderComponent } from './header/header.component';
 import { LogingComponent } from './loging/loging.component';
 import { RegisterComponent } from './register/register.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatStepperModule} from '@angular/material/stepper';
 import {MatIconModule} from '@angular/material/icon'
 import { from } from 'rxjs';
 
@@ -44,6 +45,7 @@ import { from } from 'rxjs';
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
+    MatStepperModule,
     MatToolbarModule
 
   ],
