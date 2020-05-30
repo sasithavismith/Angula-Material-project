@@ -18,9 +18,11 @@ import { HeaderComponent } from './header/header.component';
 import { LogingComponent } from './loging/loging.component';
 import { RegisterComponent } from './register/register.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatIconModule} from '@angular/material/icon'
 import { from } from 'rxjs';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { from } from 'rxjs';
     AboutusComponent,
     HeaderComponent,
     LogingComponent,
-    RegisterComponent
+    RegisterComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { from } from 'rxjs';
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
+    MatCardModule,
     MatStepperModule,
     MatToolbarModule
 
