@@ -1,1 +1,23 @@
-<p>loging works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <div class="example-container">
+                <h4>Loging with Us</h4>
+                <mat-form-field>
+                    <input matInput placeholder="Enter your email" [formControl]= "email" required>
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Enter your passwor" [type]="hide ? 'password' :'text' ">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <button mat-raised-button color="primary">Loging</button>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+ 
+</div>
